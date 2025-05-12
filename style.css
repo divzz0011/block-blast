@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  #gameCanvas {
+    display: block;
+    background-color: #000;
+    border: 2px solid #fff;
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    z-index: 10;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #score {
+      font-size: 16px;
+    }
+  }
+  
